@@ -1,0 +1,29 @@
+{
+  "name": "Jump Tab History",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "You can jump tab history. This extention is useful when you want to switch tabs while you open many tabs.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+	  "scripts": ["popup.js"],
+	  "persistent": false
+  },
+  "commands": {
+	  "go-backward": {
+		  "suggested_key": {
+			  "default": "Ctrl+Shift+P",
+			  "mac": "Command+Shift+P"
+		  },
+		  "description": "Go back to previous tab"
+	  },
+	  "go-forward": {
+		  "suggested_key": {
+			  "default": "Ctrl+Shift+N",
+			  "mac": "Command+Shift+N"
+		  },
+		  "description": "Go ahead to next tab"
+	  }
+  }
+}
